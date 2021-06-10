@@ -6,13 +6,12 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
-//ssssss
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-//tamir
+
 public class ButtonsController implements Initializable {
 
     @FXML

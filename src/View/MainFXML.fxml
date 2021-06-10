@@ -11,35 +11,49 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <SplitPane dividerPositions="0.5" layoutX="491.0" layoutY="14.0" orientation="VERTICAL">
+      <SplitPane dividerPositions="0.4609962406015038" layoutX="491.0" layoutY="14.0" orientation="VERTICAL">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0">
                <children>
-                  <Slider layoutX="60.0" layoutY="86.0" />
-                  <Slider layoutX="46.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="91.0" prefWidth="14.0" />
-                  <Circle fill="DODGERBLUE" layoutX="119.0" layoutY="41.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Circle fill="DODGERBLUE" layoutX="119.0" layoutY="41.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Slider layoutX="87.0" layoutY="159.0" prefHeight="14.0" prefWidth="130.0" />
+                  <Slider layoutX="66.0" layoutY="23.0" orientation="VERTICAL" prefHeight="130.0" prefWidth="14.0" />
+                  <Circle fill="#c7c7c7" layoutX="150.0" layoutY="80.0" radius="40.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#485969" layoutX="150.0" layoutY="80.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="290.0" />
         </items>
       </SplitPane>
-      <SplitPane dividerPositions="0.5" layoutX="228.0" layoutY="14.0" orientation="VERTICAL" prefHeight="208.0" prefWidth="253.0">
+      <SplitPane dividerPositions="0.5" layoutX="210.0" layoutY="14.0" orientation="VERTICAL" prefHeight="427.0" prefWidth="271.0">
          <items>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0" />
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0" />
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0">
+               <children>
+                  <SplitPane dividerPositions="0.49692307692307686" layoutX="4.0" layoutY="6.0" prefHeight="200.0" prefWidth="261.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="198.0" prefWidth="134.0" />
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="157.0" prefWidth="251.0">
+               <children>
+                  <Pane layoutX="3.0" layoutY="4.0" prefHeight="194.0" prefWidth="262.0" />
+               </children>
+            </AnchorPane>
          </items>
       </SplitPane>
-      <ListView layoutX="4.0" layoutY="14.0" prefHeight="400.0" prefWidth="217.0" />
-      <Button layoutX="24.0" layoutY="481.0" mnemonicParsing="false" text="Play" />
-      <Button layoutX="87.0" layoutY="481.0" mnemonicParsing="false" text="Pause" />
-      <Button layoutX="154.0" layoutY="481.0" mnemonicParsing="false" text="Stop" />
-      <Button layoutX="217.0" layoutY="481.0" mnemonicParsing="false" text="&lt;&lt;&lt;" />
-      <Button layoutX="285.0" layoutY="481.0" mnemonicParsing="false" text="&lt;&lt;" />
-      <Button layoutX="348.0" layoutY="481.0" mnemonicParsing="false" text="&gt;&gt;" />
-      <Button layoutX="417.0" layoutY="481.0" mnemonicParsing="false" text="&gt;&gt;&gt;" />
+      <ListView layoutX="4.0" layoutY="14.0" prefHeight="400.0" prefWidth="199.0" />
+      <Button layoutX="103.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="Play" />
+      <Button layoutX="174.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="Pause" />
+      <Button layoutX="241.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="Stop" />
+      <Button layoutX="308.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="&lt;&lt;&lt;" />
+      <Button layoutX="376.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="&lt;&lt;" />
+      <Button layoutX="444.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="&gt;&gt;" />
+      <Button layoutX="509.0" layoutY="494.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="47.0" text="&gt;&gt;&gt;" />
       <Button layoutX="24.0" layoutY="419.0" mnemonicParsing="false" text="Open CSV" />
       <Button layoutX="110.0" layoutY="419.0" mnemonicParsing="false" text="Open XML" />
       <Button layoutX="26.0" layoutY="450.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="157.0" text="Open Algorithm" />
+      <Slider layoutX="101.0" layoutY="531.0" prefHeight="25.0" prefWidth="608.0" />
    </children>
 </Pane>
