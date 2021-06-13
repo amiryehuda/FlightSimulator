@@ -15,20 +15,20 @@ import java.util.ResourceBundle;
 
 public class MainFXMLController extends Pane implements Observer,Initializable {
 
-    @FXML
-    classButtons buttons;
-
-    @FXML
-    classClocksPannel clocksPannel;
-
-    @FXML
-    classGraphs graphs;
-
-    @FXML
-    classJoystock joystock;
-
-    @FXML
-    classListView listView;
+//    @FXML
+//    classButtons buttons;
+//
+//    @FXML
+//    classClocksPannel clocksPannel;
+//
+//    @FXML
+//    classGraphs graphs;
+//
+//    @FXML
+//    classJoystock joystock;
+//
+//    @FXML
+//    classListView listView;
 
 
 
