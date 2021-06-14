@@ -27,23 +27,22 @@ public class classButtons implements Initializable {
     Slider slider;
 
 
-    @FXML
-    Pane pane;
-
-
-    @FXML
-    public void openCSV(ActionEvent event){
-
-        final DirectoryChooser csv_chooser= new DirectoryChooser();
-
-        Stage stage = (Stage) pane.getScene().getWindow();
-        File file = csv_chooser.showDialog(stage);
-
-        if(file != null){
-            System.out.println("path : " + file.getAbsolutePath());
-        }
-
-    }
+//    @FXML
+//    Pane pane;
+//
+//    @FXML
+//    public void openCSV(ActionEvent event){
+//
+//        final DirectoryChooser csv_chooser= new DirectoryChooser();
+//
+//        Stage stage = (Stage) pane.getScene().getWindow();
+//        File file = csv_chooser.showDialog(stage);
+//
+//        if(file != null){
+//            System.out.println("path : " + file.getAbsolutePath());
+//        }
+//
+//    }
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

@@ -14,7 +14,7 @@
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="290.0">
                <children>
-                  <Slider layoutX="47.0" layoutY="136.0" prefHeight="14.0" prefWidth="115.0" />
+                  <Slider layoutX="47.0" layoutY="136.0" prefHeight="14.0" prefWidth="115.0" value="50.0" />
                   <Slider layoutX="32.0" layoutY="20.0" orientation="VERTICAL" prefHeight="115.0" prefWidth="14.0" />
                   <Circle fill="#c7c7c7" layoutX="105.0" layoutY="73.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
                   <Circle fill="#485969" layoutX="105.0" layoutY="73.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />

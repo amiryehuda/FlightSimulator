@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
 import javafx.stage.DirectoryChooser;
+import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 import java.awt.event.ActionEvent;
@@ -15,20 +16,20 @@ import java.util.ResourceBundle;
 
 public class MainFXMLController extends Pane implements Observer,Initializable {
 
-//    @FXML
-//    classButtons buttons;
-//
-//    @FXML
-//    classClocksPannel clocksPannel;
-//
-//    @FXML
-//    classGraphs graphs;
-//
-//    @FXML
-//    classJoystock joystock;
-//
-//    @FXML
-//    classListView listView;
+    @FXML
+    classButtons buttons;
+
+    @FXML
+    classClocksPannel clocksPannel;
+
+    @FXML
+    classGraphs graphs;
+
+    @FXML
+    classJoystock joystock;
+
+    @FXML
+    classListView listView;
 
 
 
@@ -43,17 +44,12 @@ public class MainFXMLController extends Pane implements Observer,Initializable {
 
 
 //    public void openCSV(ActionEvent event){
+//        FileChooser fc = new FileChooser();
+//        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter());
 //
-//        final DirectoryChooser csv_chooser= new DirectoryChooser();
-//
-//        Stage stage = (Stage) buttonsController.pane.getScene().getWindow();
-//        File file = csv_chooser.showDialog(stage);
-//
-//        if(file != null){
-//            System.out.println("path : " + file.getAbsolutePath());
-//        }
 //
 //    }
+
 
     @Override
     public void update(Observable o, Object arg) {
