@@ -1,5 +1,10 @@
 package View;
 
+import ViewModel.ViewModel;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.FloatProperty;
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.StringProperty;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.Pane;
@@ -32,6 +37,37 @@ public class MainFXMLController extends Pane implements Observer,Initializable {
     classListView listView;
 
 
+    // Variable settings
+
+    ViewModel viewModel;
+
+    String speed;
+    String colName;
+
+    IntegerProperty numOfRow;
+
+    StringProperty openCSV_Result;
+    StringProperty chosenCSVFilePath;
+    StringProperty time;
+    StringProperty LoadXML_Result;
+    StringProperty chosenXMLFilePath;
+
+    DoubleProperty minRudder;
+    DoubleProperty maxRudder;
+    DoubleProperty minThrottle;
+    DoubleProperty maxThrottle;
+    DoubleProperty maxtimeSlider;
+
+    FloatProperty rudderstep;
+    FloatProperty throttlestep;
+    FloatProperty aileronstep;
+    FloatProperty elevatorstep;
+    FloatProperty altimeterstep;
+    FloatProperty airspeedstep;
+    FloatProperty directionstep;
+    FloatProperty pitchstep;
+    FloatProperty rollstep;
+    FloatProperty yawstep;
 
 
     @Override
@@ -43,12 +79,13 @@ public class MainFXMLController extends Pane implements Observer,Initializable {
 
 
 
-//    public void openCSV(ActionEvent event){
-//        FileChooser fc = new FileChooser();
-//        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter());
-//
-//
-//    }
+    public void openCSV(ActionEvent event){
+        FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
+        fc.setTitle("Select a CSV file");
+        fc.setInitialDirectory(new File("/"));
+
+    }
 
 
     @Override

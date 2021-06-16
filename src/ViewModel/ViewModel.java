@@ -8,7 +8,7 @@ public class ViewModel extends AllViewModel {
 
     @Override
     public void VM_LoadXML() {
-        model.Model_LoadXML();
+//        model.Model_LoadXML();
     }
 
     @Override
