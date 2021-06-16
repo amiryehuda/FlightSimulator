@@ -47,10 +47,10 @@ public class MainFXMLController extends Pane implements Observer,Initializable {
     IntegerProperty numOfRow;
 
     StringProperty openCSV_Result;
-    StringProperty chosenCSVFilePath;
+    StringProperty chosen_CSVFilePath;
     StringProperty time;
     StringProperty LoadXML_Result;
-    StringProperty chosenXMLFilePath;
+    StringProperty chosen_XMLFilePath;
 
     DoubleProperty minRudder;
     DoubleProperty maxRudder;
@@ -79,17 +79,41 @@ public class MainFXMLController extends Pane implements Observer,Initializable {
 
 
 
-    public void openCSV(ActionEvent event){
-        FileChooser fc = new FileChooser();
-        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
-        fc.setTitle("Select a CSV file");
-        fc.setInitialDirectory(new File("/"));
-
-    }
+//    public void openCSV(ActionEvent event){
+//        FileChooser fc = new FileChooser();
+//        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
+//        fc.setTitle("Select a CSV file");
+//        fc.setInitialDirectory(new File("/"));
+//        File chosenCSV = fc.showOpenDialog(null);
+//        chosen_CSVFilePath.set(chosenCSV.getAbsolutePath());
+//
+//        if (chosenCSV != null){
+//            viewModel.VM_OpenCSV();
+//
+//        }
+//
+//
+//    }
 
 
     @Override
     public void update(Observable o, Object arg) {
+
+    }
+
+    public void openCSV(javafx.event.ActionEvent actionEvent) {
+        FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("CSV Files", "*.csv"));
+        fc.setTitle("Select a CSV file");
+        fc.setInitialDirectory(new File("/"));
+        File chosenCSV = fc.showOpenDialog(null);
+        chosen_CSVFilePath.set(chosenCSV.getAbsolutePath());
+
+
+        if (chosenCSV != null){
+//            viewModel.VM_OpenCSV();
+//            System.out.println("hakol");
+        }
 
     }
 }
