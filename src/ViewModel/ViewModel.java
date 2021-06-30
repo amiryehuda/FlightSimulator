@@ -2,6 +2,8 @@ package ViewModel;
 
 import Model.AllModels;
 import Model.Model;
+import javafx.beans.Observable;
+import java.util.Observer;
 
 public class ViewModel extends AllViewModel {
     Model model;
@@ -13,7 +15,7 @@ public class ViewModel extends AllViewModel {
 
     @Override
     public void VM_OpenCSV() {
-//        model.Model_OpenCSV();
+        model.Model_OpenCSV();
     }
 
     @Override

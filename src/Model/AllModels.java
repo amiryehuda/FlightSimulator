@@ -1,10 +1,12 @@
 package Model;
 
+import javafx.beans.Observable;
+
 public abstract class AllModels {
 
     public abstract void Model_LoadXML(String XMLPath);
 
-    public abstract void Model_OpenCSV(String CSVPath);
+    public abstract void Model_OpenCSV();
 
     public abstract void Model_Play();
 

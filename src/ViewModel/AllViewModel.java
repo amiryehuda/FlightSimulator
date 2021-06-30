@@ -1,5 +1,8 @@
 package ViewModel;
 
+import javafx.beans.Observable;
+import java.util.Observer;
+
 public abstract class AllViewModel {
 
     public abstract void VM_LoadXML();

@@ -1,4 +1,5 @@
 package Model;
+import java.util.Observer;
 
 public class Model extends AllModels {
 
@@ -8,7 +9,7 @@ public class Model extends AllModels {
     }
 
     @Override
-    public void Model_OpenCSV(String CSVPath) {
+    public void Model_OpenCSV() {
 
     }
 
